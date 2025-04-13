@@ -15,7 +15,7 @@ import Logo from "@/public/images/logo-killer.png"
 export const Navbar = () => {
 
   return (
-    <HeroUINavbar maxWidth="xl" position="static" className="mt-5">
+    <HeroUINavbar maxWidth="full" position="static" className="mt-6">
       <NavbarContent justify="start">
         <NavbarItem>
           <Image width={160} alt="cnc-killer-logo" src={Logo}></Image>
@@ -25,9 +25,9 @@ export const Navbar = () => {
         <NavbarItem>
           <Popover color="foreground"  showArrow offset={20} placement="bottom">
             <PopoverTrigger>
-              <Button className="bg-red-600">YOUR ID</Button>
+            <Button className="bg-white text-red-600 shadow-sm shadow-white text-lg">YOUR ID</Button>
             </PopoverTrigger>
-            <PopoverContent>
+            <PopoverContent className="text-lg p-3">
               👀
             </PopoverContent>
           </Popover>
