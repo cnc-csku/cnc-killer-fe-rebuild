@@ -23,11 +23,11 @@ export const Navbar = () => {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Popover color="foreground"  showArrow offset={20} placement="bottom">
+          <Popover color="foreground" className="dark"  showArrow offset={20} placement="bottom">
             <PopoverTrigger>
             <Button className="bg-white text-red-600 shadow-sm shadow-white text-lg">YOUR ID</Button>
             </PopoverTrigger>
-            <PopoverContent className="text-lg p-3">
+            <PopoverContent className="text-lg p-3"> 
               👀
             </PopoverContent>
           </Popover>
