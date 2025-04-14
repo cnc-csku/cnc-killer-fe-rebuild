@@ -12,7 +12,8 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
-        luckiest_guy: ["var(--font-luckiest-guy)"]
+        luckiest_guy: ["var(--font-luckiest-guy)"],
+        mitr: ["var(--font-mitr)"]
       },
       colors: {
         background : "#121212",
