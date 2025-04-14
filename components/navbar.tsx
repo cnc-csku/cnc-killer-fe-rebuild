@@ -18,7 +18,7 @@ export const Navbar = () => {
     <HeroUINavbar maxWidth="full" position="static" className="mt-6">
       <NavbarContent justify="start">
         <NavbarItem>
-          <Image width={160} alt="cnc-killer-logo" src={Logo}></Image>
+          <Image priority={true} width={160} alt="cnc-killer-logo" src={Logo}></Image>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">

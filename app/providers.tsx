@@ -1,6 +1,7 @@
 "use client";
 
 import type { ThemeProviderProps } from "next-themes";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import * as React from "react";
 import { HeroUIProvider } from "@heroui/system";
@@ -22,10 +23,13 @@ declare module "@react-types/shared" {
 
 export function Providers({ children, themeProps }: ProvidersProps) {
   const router = useRouter();
+  const queryClient = new QueryClient()
 
   return (
     <HeroUIProvider navigate={router.push}>
+      <QueryClientProvider client={queryClient}>
       <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
+      </QueryClientProvider>
     </HeroUIProvider>
   );
 }
