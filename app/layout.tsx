@@ -37,7 +37,7 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "font-luckiest_guy min-h-screen bg-background antialiased overflow-hidden",
+          "font-luckiest_guy min-h-screen bg-background antialiased overflow-ellipsis",
           fontLuckiestGuy.className,
         )}
       >
